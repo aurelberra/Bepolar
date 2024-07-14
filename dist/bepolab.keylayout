@@ -5,7 +5,7 @@
   File          : bepolab.keylayout
   Project page  : https://github.com/aurelberra/Bepolar
   Author        : Cèd’C + aurelberra
-  Version       : 0.7.0
+  Version       : 0.7.3
   License       : WTFPL - Do What The Fuck You Want Public License
   Reference     : https://developer.apple.com/library/archive/technotes/tn2056/_index.html
 
@@ -31,17 +31,17 @@
 
   Base+Option layers
   ╭╌╌╌╌╌┰─────┬─────┬─────┬─────┬─────┰─────┬─────┬─────┬─────┬─────┰╌╌╌╌╌┬╌╌╌╌╌╮
-  ┆ ¬ ⁽ ┃ # ¹ │ « ² │ » ³ │ ( ⁴ │ ) ⁵ ┃ @ ⁶ │ + ⁷ │ ^ ⁸ │ / ⁹ │ * ⁰ ┃*µ ⁾ ┆ §   ┆
-  ┆ ~ ₍ ┃ 1 ₁ │ 2 ₂ │ 3 ₃ │ 4 ₄ │ 5 ₅ ┃ 6 ₆ │ 7 ₇ │ 8 ₈ │ 9 ₉ │ 0 ₀ ┃ = ₎ ┆ %   ┆
+  ┆ ! ⁽ ┃ # ¹ │ « ² │ » ³ │ ( ⁴ │ ) ⁵ ┃ @ ⁶ │ + ⁷ │ ^ ⁸ │ / ⁹ │ * ⁰ ┃*µ ⁾ ┆ §   ┆
+  ┆ - ₍ ┃ 1 ₁ │ 2 ₂ │ 3 ₃ │ 4 ₄ │ 5 ₅ ┃ 6 ₆ │ 7 ₇ │ 8 ₈ │ 9 ₉ │ 0 ₀ ┃ = ₎ ┆ %   ┆
   ╰╌╌╌╌╌╂─────┼─────┼─────┼─────┼─────╂─────┼─────┼─────┼─────┼─────╂╌╌╌╌╌┼╌╌╌╌╌┤
-        ┃ B*^ │ M   │ P   │ O*¤ │ W ‰ ┃ Z*˚ │ V   │ D × │ L*´ │ J*` ┃ {   ┆ }   ┆
-        ┃   ^ │   < │   > │   $ │   % ┃   @ │   & │   * │   ' │   ` ┃ [   ┆ ]   ┆
+        ┃ B*^ │ M   │ P   │ O*¤ │ W ‰ ┃ Z*˚ │ V   │ D × │ ?*´ │ J*` ┃ {   ┆ }   ┆
+        ┃   ^ │   < │   > │   $ │   % ┃   @ │   & │   * │** ' │   ` ┃ [   ┆ ]   ┆
         ┠─────┼─────┼─────┼─────┼─────╂─────┼─────┼─────┼─────┼─────╂╌╌╌╌╌┼╌╌╌╌╌┤
         ┃ A*ˇ │ U « │ I » │ E*˙ │ ; ≠ ┃ C*/ │ T ± │ S*¯ │ R ÷ │ N*” ┃ "   ┆ €   ┆
         ┃   { │   ( │   ) │   } │ , = ┃   \ │   + │   - │   / │   " ┃ '*´ ┆ $   ┆
   ╭╌╌╌╌╌╂─────┼─────┼─────┼─────┼─────╂─────┼─────┼─────┼─────┼─────╂╌╌╌╌╌┴╌╌╌╌╌╯
-  ┆ \   ┃ !*~ │ Y*, │ X*˛ │ : – │ K   ┃ ?   │ Q ¬ │ G*¸ │ H   │ F*˘ ┃
-  ┆ /   ┃ - ~ │   [ │   ] │ . _ │   # ┃** | │   ! │   ; │   : │   ? ┃
+  ┆ \   ┃ ¬*~ │ Y*, │ X*˛ │ : – │ K   ┃ L   │ Q ¬ │ G*¸ │ H   │ F*˘ ┃
+  ┆ /   ┃ ~ ~ │   [ │   ] │ . _ │   # ┃   | │   ! │   ; │   : │   ? ┃
   ╰╌╌╌╌╌┸─────┴─────┴─────┴─────┴─────┸─────┴─────┴─────┴─────┴─────┚
   -->
 <keyboard group="0" id="0" name="Bépolab" maxout="1">
@@ -90,7 +90,7 @@
       <key code="16"  action="ad06_z" />
       <key code="32"  action="ad07_v" />
       <key code="34"  action="ad08_d" />
-      <key code="31"  action="ad09_l" />
+      <key code="31"  action="dead_1dk" />
       <key code="35"  action="ad10_j" />
 
       <!-- Letters, second row -->
@@ -106,12 +106,12 @@
       <key code="41"  action="ac10_n" />
 
       <!-- Letters, third row -->
-      <key code="6"   action="ab01_-" />
+      <key code="6"   action="ab01_~" />
       <key code="7"   action="ab02_y" />
       <key code="8"   action="ab03_x" />
       <key code="9"   action="ab04_." />
       <key code="11"  action="ab05_k" />
-      <key code="45"  action="dead_1dk" />
+      <key code="45"  action="ab06_l" />
       <key code="46"  action="ab07_q" />
       <key code="43"  action="ab08_g" />
       <key code="47"  action="ab09_h" />
@@ -123,7 +123,7 @@
       <key code="33"  output="[" />
       <key code="30"  output="]" />
       <key code="39"  action="ac11_'" />
-      <key code="50"  action="tlde_~" />
+      <key code="50"  action="tlde_-" />
       <key code="42"  action="bksl_$" />
       <key code="10"  action="lsgt_/" />
 
@@ -217,7 +217,7 @@
       <key code="16"  action="ad06_Z" />
       <key code="32"  action="ad07_V" />
       <key code="34"  action="ad08_D" />
-      <key code="31"  action="ad09_L" />
+      <key code="31"  action="ad09_?" />
       <key code="35"  action="ad10_J" />
 
       <!-- Letters, second row -->
@@ -233,12 +233,12 @@
       <key code="41"  action="ac10_N" />
 
       <!-- Letters, third row -->
-      <key code="6"   action="ab01_!" />
+      <key code="6"   output="¬" />
       <key code="7"   action="ab02_Y" />
       <key code="8"   action="ab03_X" />
       <key code="9"   action="ab04_:" />
       <key code="11"  action="ab05_K" />
-      <key code="45"  action="ab06_?" />
+      <key code="45"  action="ab06_L" />
       <key code="46"  action="ab07_Q" />
       <key code="43"  action="ab08_G" />
       <key code="47"  action="ab09_H" />
@@ -250,7 +250,7 @@
       <key code="33"  output="{" />
       <key code="30"  output="}" />
       <key code="39"  output="&#x0022;" />
-      <key code="50"  output="¬" />
+      <key code="50"  action="tlde_!" />
       <key code="42"  action="bksl_€" />
       <key code="10"  action="lsgt_\" />
 
@@ -344,7 +344,7 @@
       <key code="16"  action="ad06_Z" />
       <key code="32"  action="ad07_V" />
       <key code="34"  action="ad08_D" />
-      <key code="31"  action="ad09_L" />
+      <key code="31"  action="dead_1dk" />
       <key code="35"  action="ad10_J" />
 
       <!-- Letters, second row -->
@@ -360,12 +360,12 @@
       <key code="41"  action="ac10_N" />
 
       <!-- Letters, third row -->
-      <key code="6"   action="ab01_-" />
+      <key code="6"   action="ab01_~" />
       <key code="7"   action="ab02_Y" />
       <key code="8"   action="ab03_X" />
       <key code="9"   action="ab04_." />
       <key code="11"  action="ab05_K" />
-      <key code="45"  action="dead_1dk" />
+      <key code="45"  action="ab06_L" />
       <key code="46"  action="ab07_Q" />
       <key code="43"  action="ab08_G" />
       <key code="47"  action="ab09_H" />
@@ -377,7 +377,7 @@
       <key code="33"  output="[" />
       <key code="30"  output="]" />
       <key code="39"  action="ac11_'" />
-      <key code="50"  action="tlde_~" />
+      <key code="50"  action="tlde_-" />
       <key code="42"  action="bksl_$" />
       <key code="10"  action="lsgt_/" />
 
@@ -1034,6 +1034,7 @@
     </action>
     <action id="ad07_v">
       <when state="none"       output="v" />
+      <when state="1dk"        output="(" />
       <when state="tilde"      output="ṽ" />
     </action>
     <action id="ad07_V">
@@ -1042,7 +1043,7 @@
     </action>
     <action id="ad08_d">
       <when state="none"       output="d" />
-      <when state="1dk"        output="(" />
+      <when state="1dk"        output=")" />
       <when state="caron"      output="ď" />
       <when state="cedilla"    output="ḑ" />
       <when state="stroke"     output="đ" />
@@ -1063,26 +1064,9 @@
       <when state="none"       output="*" />
       <when state="1dk"        output="×" />
     </action>
-    <action id="ad09_l">
-      <when state="none"       output="l" />
-      <when state="1dk"        output=")" />
-      <when state="acute"      output="ĺ" />
-      <when state="caron"      output="ľ" />
-      <when state="cedilla"    output="ļ" />
-      <when state="stroke"     output="ł" />
-      <when state="abovedot"   output="ŀ" />
-      <when state="greek"      output="λ" />
-      <when state="currency"   output="£" />
-    </action>
-    <action id="ad09_L">
-      <when state="none"       output="L" />
-      <when state="acute"      output="Ĺ" />
-      <when state="caron"      output="Ľ" />
-      <when state="cedilla"    output="Ļ" />
-      <when state="stroke"     output="Ł" />
-      <when state="abovedot"   output="Ŀ" />
-      <when state="greek"      output="Λ" />
-      <when state="currency"   output="₤" />
+    <action id="ad09_?">
+      <when state="none"       output="?" />
+      <when state="1dk"        output="¿" />
     </action>
     <action id="ad09_'">
       <when state="none"       output="'" />
@@ -1414,16 +1398,6 @@
     </action>
 
     <!-- Letters, third row -->
-    <action id="ab01_-">
-      <when state="none"       output="-" />
-      <when state="1dk"        output="—" />
-      <when state="circumflex" output="⁻" />
-      <when state="caron"      output="₋" />
-    </action>
-    <action id="ab01_!">
-      <when state="none"       output="!" />
-      <when state="1dk"        output="¡" />
-    </action>
     <action id="ab01_~">
       <when state="none"       output="~" />
       <when state="1dk"        next="tilde" />
@@ -1500,9 +1474,25 @@
       <when state="none"       output="#" />
       <when state="1dk"        output="¶" />
     </action>
-    <action id="ab06_?">
-      <when state="none"       output="?" />
-      <when state="1dk"        output="¿" />
+    <action id="ab06_l">
+      <when state="none"       output="l" />
+      <when state="acute"      output="ĺ" />
+      <when state="caron"      output="ľ" />
+      <when state="cedilla"    output="ļ" />
+      <when state="stroke"     output="ł" />
+      <when state="abovedot"   output="ŀ" />
+      <when state="greek"      output="λ" />
+      <when state="currency"   output="£" />
+    </action>
+    <action id="ab06_L">
+      <when state="none"       output="L" />
+      <when state="acute"      output="Ĺ" />
+      <when state="caron"      output="Ľ" />
+      <when state="cedilla"    output="Ļ" />
+      <when state="stroke"     output="Ł" />
+      <when state="abovedot"   output="Ŀ" />
+      <when state="greek"      output="Λ" />
+      <when state="currency"   output="₤" />
     </action>
     <action id="ab07_q">
       <when state="none"       output="q" />
@@ -1614,9 +1604,15 @@
       <when state="none"       output="'" />
       <when state="1dk"        output="`" />
     </action>
-    <action id="tlde_~">
-      <when state="none"       output="~" />
-      <when state="1dk"        next="tilde" />
+    <action id="tlde_-">
+      <when state="none"       output="-" />
+      <when state="1dk"        output="—" />
+      <when state="circumflex" output="⁻" />
+      <when state="caron"      output="₋" />
+    </action>
+    <action id="tlde_!">
+      <when state="none"       output="!" />
+      <when state="1dk"        output="¡" />
     </action>
     <action id="bksl_$">
       <when state="none"       output="$" />

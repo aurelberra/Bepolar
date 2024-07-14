@@ -8,7 +8,7 @@
 // File          : bepolab.xkb_keymap
 // Project page  : https://github.com/aurelberra/Bepolar
 // Author        : Cèd’C + aurelberra
-// Version       : 0.7.0
+// Version       : 0.7.3
 // License       : WTFPL - Do What The Fuck You Want Public License
 //
 // Bépolab
@@ -21,17 +21,17 @@ xkb_keymap {
 
   // Base layer + dead key
   // ╭╌╌╌╌╌┰─────┬─────┬─────┬─────┬─────┰─────┬─────┬─────┬─────┬─────┰╌╌╌╌╌┬╌╌╌╌╌╮
-  // ┆ ¬   ┃ # ¶ │ « “ │ » ” │ ( „ │ ) ‘ ┃ @ § │ + ÷ │ ^*ˇ │ / | │ * × ┃*µ   ┆ § ¶ ┆
-  // ┆ ~*~ ┃ 1 & │ 2 < │ 3 > │ 4 ( │ 5 ) ┃ 6 @ │ 7 ± │ 8*^ │ 9 \ │ 0 ° ┃ = ≠ ┆ % ‰ ┆
+  // ┆ ! ¡ ┃ # ¶ │ « “ │ » ” │ ( „ │ ) ‘ ┃ @ § │ + ÷ │ ^*ˇ │ / | │ * × ┃*µ   ┆ § ¶ ┆
+  // ┆ - — ┃ 1 & │ 2 < │ 3 > │ 4 ( │ 5 ) ┃ 6 @ │ 7 ± │ 8*^ │ 9 \ │ 0 ° ┃ = ≠ ┆ % ‰ ┆
   // ╰╌╌╌╌╌╂─────┼─────┼─────┼─────┼─────╂─────┼─────┼─────┼─────┼─────╂╌╌╌╌╌┼╌╌╌╌╌┤
-  //       ┃ B   │ M   │ P   │ O   │ W   ┃ Z   │ V   │ D   │ L   │ J   ┃ {   ┆ }   ┆
-  //       ┃   â │   û │   î │   ô │   œ ┃   ß │     │   ( │   ) │     ┃ [   ┆ ]   ┆
+  //       ┃ B   │ M   │ P   │ O   │ W   ┃ Z   │ V   │ D   │ ? ¿ │ J   ┃ {   ┆ }   ┆
+  //       ┃   â │   û │   î │   ô │   œ ┃   ß │   ( │   ) │***¨ │     ┃ [   ┆ ]   ┆
   //       ┠─────┼─────┼─────┼─────┼─────╂─────┼─────┼─────┼─────┼─────╂╌╌╌╌╌┼╌╌╌╌╌┤
   //       ┃ A   │ U   │ I   │ E   │ ;   ┃ C   │ T   │ S   │ R   │ N   ┃ "   ┆ €*¤ ┆
   //       ┃   à │   ù │   é │   è │ , ê ┃   ç │   « │   » │     │   ñ ┃ ' ` ┆ $ ¢ ┆
   // ╭╌╌╌╌╌╂─────┼─────┼─────┼─────┼─────╂─────┼─────┼─────┼─────┼─────╂╌╌╌╌╌┴╌╌╌╌╌╯
-  // ┆ \   ┃ ! ¡ │ Y   │ X   │ : · │ K   ┃ ? ¿ │ Q   │ G   │ H   │ F   ┃
-  // ┆ / | ┃ - — │   ŷ │   _ │ . … │   æ ┃***¨ │   – │   — │   − │   ‑ ┃
+  // ┆ \   ┃ ¬   │ Y   │ X   │ : · │ K   ┃ L   │ Q   │ G   │ H   │ F   ┃
+  // ┆ / | ┃ ~*~ │   ŷ │   _ │ . … │   æ ┃     │   – │   — │   − │   ‑ ┃
   // ╰╌╌╌╌╌┸─────┴─────┴─────┴─────┴─────┸─────┴─────┴─────┴─────┴─────┚
 
   // AltGr layer
@@ -87,9 +87,9 @@ xkb_keymap {
     key <AD04> {[ o               , O               , ocircumflex     , Ocircumflex     ],[ dollar          , dead_currency   ]}; // o O ô Ô $ ¤
     key <AD05> {[ w               , W               , oe              , OE              ],[ percent         , U2030           ]}; // w W œ Œ % ‰
     key <AD06> {[ z               , Z               , ssharp          , U1E9E           ],[ at              , dead_abovering  ]}; // z Z ß ẞ @ ˚
-    key <AD07> {[ v               , V               , VoidSymbol      , VoidSymbol      ],[ ampersand       , VoidSymbol      ]}; // v V     &
-    key <AD08> {[ d               , D               , parenleft       , VoidSymbol      ],[ asterisk        , multiply        ]}; // d D (   * ×
-    key <AD09> {[ l               , L               , parenright      , VoidSymbol      ],[ apostrophe      , dead_acute      ]}; // l L )   ' ´
+    key <AD07> {[ v               , V               , parenleft       , VoidSymbol      ],[ ampersand       , VoidSymbol      ]}; // v V (   &
+    key <AD08> {[ d               , D               , parenright      , VoidSymbol      ],[ asterisk        , multiply        ]}; // d D )   * ×
+    key <AD09> {[ ISO_Level3_Latch, question        , dead_diaeresis  , questiondown    ],[ apostrophe      , dead_acute      ]}; // *¨ ? ¨ ¿ ' ´
     key <AD10> {[ j               , J               , VoidSymbol      , VoidSymbol      ],[ grave           , dead_grave      ]}; // j J     ` `
 
     // Letters, second row
@@ -105,12 +105,12 @@ xkb_keymap {
     key <AC10> {[ n               , N               , ntilde          , Ntilde          ],[ quotedbl        , dead_doubleacute]}; // n N ñ Ñ " ˝
 
     // Letters, third row
-    key <AB01> {[ minus           , exclam          , emdash          , exclamdown      ],[ asciitilde      , dead_tilde      ]}; // - ! — ¡ ~ ~
+    key <AB01> {[ asciitilde      , notsign         , dead_tilde      , VoidSymbol      ],[ asciitilde      , dead_tilde      ]}; // ~ ¬ ~   ~ ~
     key <AB02> {[ y               , Y               , U0177           , U0176           ],[ bracketleft     , dead_belowcomma ]}; // y Y ŷ Ŷ [ ,
     key <AB03> {[ x               , X               , underscore      , VoidSymbol      ],[ bracketright    , dead_ogonek     ]}; // x X _   ] ˛
     key <AB04> {[ period          , colon           , ellipsis        , periodcentered  ],[ underscore      , endash          ]}; // . : … · _ –
     key <AB05> {[ k               , K               , ae              , AE              ],[ numbersign      , VoidSymbol      ]}; // k K æ Æ #
-    key <AB06> {[ ISO_Level3_Latch, question        , dead_diaeresis  , questiondown    ],[ bar             , brokenbar       ]}; // *¨ ? ¨ ¿ | ¦
+    key <AB06> {[ l               , L               , VoidSymbol      , VoidSymbol      ],[ bar             , brokenbar       ]}; // l L     | ¦
     key <AB07> {[ q               , Q               , endash          , VoidSymbol      ],[ exclam          , notsign         ]}; // q Q –   ! ¬
     key <AB08> {[ g               , G               , emdash          , VoidSymbol      ],[ semicolon       , dead_cedilla    ]}; // g G —   ; ¸
     key <AB09> {[ h               , H               , U2212           , VoidSymbol      ],[ colon           , VoidSymbol      ]}; // h H −   :
@@ -124,7 +124,7 @@ xkb_keymap {
     key <AD12> {[ bracketright    , braceright      , VoidSymbol      , VoidSymbol      ],[ VoidSymbol      , VoidSymbol      ]}; // ] }
     key <AC11> {[ apostrophe      , quotedbl        , grave           , VoidSymbol      ],[ dead_acute      , VoidSymbol      ]}; // ' " `   ´
     key <AB11> {[ VoidSymbol      , VoidSymbol      , VoidSymbol      , VoidSymbol      ],[ VoidSymbol      , VoidSymbol      ]}; //
-    key <TLDE> {[ asciitilde      , notsign         , dead_tilde      , VoidSymbol      ],[ U208D           , U207D           ]}; // ~ ¬ ~   ₍ ⁽
+    key <TLDE> {[ minus           , exclam          , emdash          , exclamdown      ],[ U208D           , U207D           ]}; // - ! — ¡ ₍ ⁽
     key <BKSL> {[ dollar          , EuroSign        , cent            , dead_currency   ],[ VoidSymbol      , VoidSymbol      ]}; // $ € ¢ ¤
     key <LSGT> {[ slash           , backslash       , bar             , brokenbar       ],[ VoidSymbol      , VoidSymbol      ]}; // / \ | ¦
 
